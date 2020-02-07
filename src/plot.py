@@ -12,14 +12,14 @@ y = np.arange(0,10,0.1)
 
 xx, yy = np.meshgrid(x,y,sparse=True)
 
-z = -xx**2*np.cos(yy)**2
-
-surf = ax.plot_surface(xx, yy, z, cmap=cm.coolwarm,linewidth=0, antialiased=False)
-
-plt.show()
-
-#z = -xx**2*np.cos(yy)**2-yy**2
+#z = -xx**2*np.cos(yy)**2
 
 #surf = ax.plot_surface(xx, yy, z, cmap=cm.coolwarm,linewidth=0, antialiased=False)
 
 #plt.show()
+
+z = -xx**2*np.cos(yy)**2-yy**2
+
+surf = ax.plot_surface(xx, yy, z, cmap=cm.coolwarm,linewidth=0, antialiased=False)
+
+plt.show()
